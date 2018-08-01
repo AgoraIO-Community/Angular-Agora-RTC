@@ -1,0 +1,11 @@
+{
+  "name": "angular-agora-rtc",
+  "version": "0.0.4",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "dependencies": {
+    "agora-rtc-sdk": "^2.3.1"
+  }
+}

@@ -1,0 +1,13 @@
+<!-- <div class="local-video">
+    <agora-local width="500" height="500"></agora-local>
+</div> -->
+
+<div class="video-containers">
+    <div id="agora_local">
+        <button (click)="joinCall()">Start Call</button>
+    </div>
+    <div class="remote-containers">
+        <div class="remote_calls" *ngFor="let remote of remoteCalls;" [id]="remote">
+        </div>
+    </div>
+</div>
