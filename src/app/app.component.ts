@@ -1,24 +1,23 @@
 import { Component } from '@angular/core';
 import { AngularAgoraRtcService, Stream } from 'angular-agora-rtc';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  localStream: Stream;
+  title = 'AgoraDemo';
+  localStream: Stream
   remoteCalls: any = [];
 
   constructor(
-    private agoraService: AngularAgoraRtcService,
+    private agoraService: AngularAgoraRtcService
   ) {
     this.agoraService.createClient();
   }
 
-  joinCall() {
+  startCall() {
     this.agoraService.client.join(null, '1000', null, (uid) => {
       this.localStream = this.agoraService.createStream(uid, true, null, null, true, false);
       this.localStream.setVideoProfile('720p_3');
@@ -65,6 +64,7 @@ export class AppComponent {
         console.log("Subscribe stream failed", err);
       });
     });
+
     this.agoraService.client.on('stream-subscribed', (evt) => {
       const stream = evt.stream;
       if (!this.remoteCalls.includes(`agora_remote${stream.getId()}`)) this.remoteCalls.push(`agora_remote${stream.getId()}`);
@@ -85,14 +85,6 @@ export class AppComponent {
         this.remoteCalls = this.remoteCalls.filter(call => call === `#agora_remote${stream.getId()}`);
         console.log(`${evt.uid} left from this channel`);
       }
-    });
-  }
-
-  leave() {
-    this.agoraService.client.leave(() => {
-      console.log("Leavel channel successfully");
-    }, (err) => {
-      console.log("Leave channel failed");
     });
   }
 }

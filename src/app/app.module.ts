@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AngularAgoraRtcModule, AgoraConfig } from 'angular-agora-rtc';
 
 import { AppComponent } from './app.component';
-import { AngularAgoraRtcModule, AgoraConfig } from 'angular-agora-rtc'; // Add
 
 const agoraConfig: AgoraConfig = {
-  AppID: 'kljlkjlkjlkjlkjlkjlkjlkjlkjlkj',
+  AppID: 'APP ID HERE',
 };
 
 @NgModule({
@@ -14,7 +14,7 @@ const agoraConfig: AgoraConfig = {
   ],
   imports: [
     BrowserModule,
-    AngularAgoraRtcModule.forRoot(agoraConfig) // Add
+    AngularAgoraRtcModule.forRoot(agoraConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
