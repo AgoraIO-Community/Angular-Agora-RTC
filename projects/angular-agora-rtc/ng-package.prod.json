@@ -4,5 +4,8 @@
   "lib": {
     "entryFile": "src/public_api.ts"
   },
-  "whitelistedNonPeerDependencies": ["agora-rtc-sdk"]
+  "whitelistedNonPeerDependencies": [
+    "agora-rtc-sdk",
+    "material-design-icons"
+  ]
 }

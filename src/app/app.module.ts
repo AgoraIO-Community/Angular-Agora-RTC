@@ -5,7 +5,7 @@ import { AngularAgoraRtcModule, AgoraConfig } from 'angular-agora-rtc';
 import { AppComponent } from './app.component';
 
 const agoraConfig: AgoraConfig = {
-  AppID: 'APP ID HERE',
+  AppID: 'ksdfjlkdsjfklsdjf',
 };
 
 @NgModule({

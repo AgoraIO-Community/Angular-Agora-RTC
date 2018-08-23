@@ -8,6 +8,8 @@
 # dependencies
 /node_modules
 
+/project/angular-agora-rtc/node_modules
+
 # IDEs and editors
 /.idea
 .project

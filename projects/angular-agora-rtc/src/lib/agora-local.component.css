@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+p {
+  font-family: Lato;
+}
+
+.video-container{
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.agora_local{
+  background-color: #404040;
+  height: 250px;
+  width: 250px;
+  border: black 1px solid;
+  margin: 8px;
+}
+#agora_local{
+  height: 250px; 
+  width: 250px;
+}
+
+.agora_remote{
+  background-color: #404040;
+  height: 250px;
+  width: 250px;
+  border: black 1px solid;
+  margin: 8px;
+}
+
+.video-buttons{
+  width: 250px;
+  top: 210px;
+  position: relative;
+  text-align: center;
+  z-index: 999;
+}
+
+.video-buttons i{
+  cursor: pointer;
+}
+
+.endCall{
+  color: red;
+}
+
+.startCall{
+  color: white;
+}
+
+.mic{
+  color: white;
+}

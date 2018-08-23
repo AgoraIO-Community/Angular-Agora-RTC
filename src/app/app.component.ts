@@ -85,6 +85,7 @@ export class AppComponent {
         this.remoteCalls = this.remoteCalls.filter(call => call === `#agora_remote${stream.getId()}`);
         console.log(`${evt.uid} left from this channel`);
       }
-    });
+    }); 
   }
+  
 }
