@@ -41,8 +41,8 @@ export class AngularAgoraRtcService {
     });
   }
 
-  createClient(mode: string = 'interop') {
-     this.client = AgoraRTC.createClient({ mode: mode });
+  createClient(mode: string = 'interop', codec: string = 'vp8') {
+     this.client = AgoraRTC.createClient({ mode: mode, codec: codec });
      this.client.init(this.config.AppID);
   }
 
