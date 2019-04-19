@@ -50,6 +50,10 @@ export class AngularAgoraRtcService {
     return AgoraRTC.createStream({streamID, audio, cameraId, microphoneId, video, screen});
   }
 
+  setLoggerLevel(level: AgoraRTC.Logger) {
+    AgoraRTC.Logger.setLoggerLevel(level);
+  }
+
   logger(type: string, message: string) {
     switch (type) {
       case 'error':
