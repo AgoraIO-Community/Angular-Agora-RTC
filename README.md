@@ -18,7 +18,7 @@ npm install angular-agora-rtc --save
 
 ### Setup
 
-In your app's main module, import `AngularAgoraRtcModule` and `AgoraConfig` from `angular-agora-rtc` and add the module to the imports array. Create an instance of `AgoraConfig` and set `AppID` equal to the the value found in your project list on Agora.io. 
+In your app's main module, import `AngularAgoraRtcModule` and `AgoraConfig` from `angular-agora-rtc` and add the module to the imports array. Create an instance of `AgoraConfig` and set `AppID` equal to the value found in your project list on Agora.io. 
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
