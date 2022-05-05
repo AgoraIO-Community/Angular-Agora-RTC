@@ -3,10 +3,10 @@
   "version": "0.0.9",
   "homepage": "https://github.com/Only1MrAnderson/Angular-Agora-RTC#readme",
   "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0 || ~9.1.12 || ~11.2.14",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0 || ~9.1.12 || ~11.2.14"
   },
   "dependencies": {
-    "agora-rtc-sdk": "^2.3.1"
+    "agora-rtc-sdk": "^3.6.10"
   }
 }
